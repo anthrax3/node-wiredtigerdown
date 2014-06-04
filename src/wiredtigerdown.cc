@@ -5,11 +5,11 @@
 
 #include <node.h>
 
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "database.h"
 #include "iterator.h"
 #include "batch.h"
-#include "leveldown_async.h"
+#include "wiredtigerdown_async.h"
 
 namespace leveldown {
 
@@ -91,9 +91,9 @@ void Init (v8::Handle<v8::Object> target) {
     , v8::FunctionTemplate::New(RepairDB)->GetFunction()
   );
 
-  target->Set(NanSymbol("leveldown"), leveldown);
+  target->Set(NanSymbol("wiredtigerdown"), leveldown);
 }
 
-NODE_MODULE(leveldown, Init)
+NODE_MODULE(wiredtigerdown, Init)
 
 } // namespace leveldown

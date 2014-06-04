@@ -5,8 +5,8 @@
 
 #include <leveldb/db.h>
 
-#include "leveldown.h"
-#include "leveldown_async.h"
+#include "wiredtigerdown.h"
+#include "wiredtigerdown_async.h"
 
 namespace leveldown {
 

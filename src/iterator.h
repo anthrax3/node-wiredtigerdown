@@ -9,7 +9,7 @@
 #include <node.h>
 
 #include "nan.h"
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "database.h"
 #include "async.h"
 

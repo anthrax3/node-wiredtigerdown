@@ -10,7 +10,7 @@
 #include "leveldb/db.h"
 #include "leveldb/write_batch.h"
 
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "database.h"
 #include "async.h"
 #include "database_async.h"

@@ -14,7 +14,7 @@
 #include "leveldb/db.h"
 #include "leveldb/filter_policy.h"
 #include "nan.h"
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "iterator.h"
 
 namespace leveldown {

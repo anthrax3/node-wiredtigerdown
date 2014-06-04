@@ -1,1 +1,1 @@
-module.exports = require('bindings')('leveldown.node').leveldown
+module.exports = require('bindings')('wiredtigerdown.node').wiredtigerdown

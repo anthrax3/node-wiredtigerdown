@@ -925,8 +925,14 @@ __conn_single(WT_SESSION_IMPL *session, const char *cfg[])
 		    WT_SINGLETHREAD, WIREDTIGER_VERSION_STRING);
 		WT_ERR(__wt_write(session, conn->lock_fh, (off_t)0, len, buf));
 		created = 1;
-	} else
+	} else {
+		WT_RET(__wt_config_gets(session, cfg, "exclusive", &cval));
+		if (cval.val != 0)
+			WT_ERR_MSG(session, EBUSY,
+			    "WiredTiger database already existed and "
+			    "exclusive option defined.");
 		created = 0;
+	}
 
 	/*
 	 * If we found a zero-length WiredTiger lock file, and eventually ended

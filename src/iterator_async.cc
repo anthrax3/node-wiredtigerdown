@@ -7,7 +7,7 @@
 #include <node_buffer.h>
 
 #include "database.h"
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "async.h"
 #include "iterator_async.h"
 

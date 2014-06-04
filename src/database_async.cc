@@ -10,7 +10,7 @@
 #include "leveldb/filter_policy.h"
 
 #include "database.h"
-#include "leveldown.h"
+#include "wiredtigerdown.h"
 #include "async.h"
 #include "database_async.h"
 

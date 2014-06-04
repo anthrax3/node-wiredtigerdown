@@ -1,6 +1,6 @@
 {
     "targets": [{
-      "target_name": "leveldown"
+      "target_name": "wiredtigerdown"
       , "include_dirs"  : [
             "<!(node -e \"require('nan')\")"
         ]
@@ -15,8 +15,8 @@
           , "src/database_async.cc"
           , "src/iterator.cc"
           , "src/iterator_async.cc"
-          , "src/leveldown.cc"
-          , "src/leveldown_async.cc"
+          , "src/wiredtigerdown.cc"
+          , "src/wiredtigerdown_async.cc"
         ]
     }]
 }
